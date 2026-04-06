@@ -1,4 +1,4 @@
-# Smart 2FA CLI Manager (bash) <sup>v1.0.0</sup>
+# Smart 2FA Manager (bash) <sup>v1.0.1</sup>
 
 **Lightweight, offline, independent TOTP 2FA manager for Linux.**
 
@@ -36,13 +36,13 @@ sudo dnf install oathtool gnupg2 qrencode
 1. Get the script from repository:
    ```bash
    cd ~
-   git clone https://github.com/smartlegionlab/smart-2fa-cli-manager-bash.git
-   cd smart-2fa-cli-manager-bash
+   git clone https://github.com/smartlegionlab/smart-2fa-manager-bash.git
+   cd smart-2fa-manager-bash
    ```
 
    Or download directly:
    ```bash
-   wget https://raw.githubusercontent.com/smartlegionlab/smart-2fa-cli-manager/main/2fa.sh
+   wget https://raw.githubusercontent.com/smartlegionlab/smart-2fa-manager-bash/main/2fa.sh
    ```
 
 2. Install:
@@ -147,7 +147,7 @@ sudo cp 2fa.sh /usr/local/bin/2fa.sh
 ## Author & Repository
 
 - **Author:** [@smartlegionlab](https://github.com/smartlegionlab/)
-- **Repository:** [smartlegionlab/smart-2fa-cli-manager-bash](https://github.com/smartlegionlab/smart-2fa-cli-manager-bash)
+- **Repository:** [smartlegionlab/smart-2fa-manager-bash](https://github.com/smartlegionlab/smart-2fa-manager-bash)
 - **License:** [BSD 3-Clause](LICENSE)
 
 ---

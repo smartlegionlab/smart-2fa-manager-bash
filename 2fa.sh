@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ============================================
-# Smart 2FA CLI Manager - independent TOTP generator
-# Version: 1.0.0
+# Smart 2FA Manager - independent TOTP generator
+# Version: v1.0.1
 # Author: Alexander Suvorov
-# Repository: https://github.com/smartlegionlab/smart-2fa-cli-manager-bash
+# Repository: https://github.com/smartlegionlab/smart-2fa-manager-bash
 # License: BSD 3-Clause
 # ============================================
 
@@ -12,7 +12,7 @@ CONFIG_DIR="$HOME/.2fa"
 SECRETS_ENC="$CONFIG_DIR/secrets.gpg"
 SECRETS_TMP="$CONFIG_DIR/secrets.tmp"
 BACKUP_DIR="$CONFIG_DIR/backups"
-VERSION="1.0.0"
+VERSION="v1.0.1"
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -20,7 +20,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-APP_NAME="Smart 2FA CLI Manager"
+APP_NAME="Smart 2FA Manager"
 
 mkdir -p "$CONFIG_DIR"
 mkdir -p "$BACKUP_DIR"
@@ -40,7 +40,7 @@ sanitize_service_name() {
 
 usage() {
     cat << EOF
-Smart 2FA CLI Manager v${VERSION} - Offline TOTP 2FA generator for Linux
+Smart 2FA Manager v${VERSION} - Offline TOTP 2FA generator for Linux
 
 Usage:
     2fa <command> [arguments]
@@ -74,7 +74,7 @@ File Structure:
     ~/.2fa/secrets.gpg          # Encrypted master storage
     ~/.2fa/backups/*.gpg        # Timestamped encrypted backups
 
-Repository: https://github.com/smartlegionlab/smart-2fa-cli-manager-bash
+Repository: https://github.com/smartlegionlab/smart-2fa-manager-bash
 License: BSD 3-Clause
 EOF
     exit 0
@@ -82,11 +82,11 @@ EOF
 
 about() {
     cat << EOF
-Smart 2FA CLI Manager v${VERSION}
+Smart 2FA Manager v${VERSION}
 
 Author:  Alexander Suvorov
 License: BSD 3-Clause
-Repository: https://github.com/smartlegionlab/smart-2fa-cli-manager-bash
+Repository: https://github.com/smartlegionlab/smart-2fa-manager-bash
 
 Description:
     A lightweight, offline, and independent TOTP 2FA manager for Linux.
@@ -115,7 +115,7 @@ EOF
 }
 
 version() {
-    echo "Smart 2FA CLI Manager v${VERSION}"
+    echo "Smart 2FA Manager v${VERSION}"
     exit 0
 }
 
