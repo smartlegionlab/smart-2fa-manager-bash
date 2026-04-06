@@ -1,4 +1,4 @@
-# Smart 2FA Manager (bash) <sup>v1.0.1</sup>
+# Smart 2FA Manager (bash) <sup>v1.0.2</sup>
 
 **Lightweight, offline, independent TOTP 2FA manager for Linux.**
 
@@ -48,15 +48,11 @@ sudo dnf install oathtool gnupg2 qrencode
 2. Install:
    ```bash
    chmod +x 2fa.sh
-   sudo cp 2fa.sh /usr/local/bin/2fa
+   sudo cp 2fa.sh /usr/local/bin/2fa.sh
    ```
 
-   Now you can use: `2fa init`
+   Now you can use: `2fa.sh init`
 
-Or if you prefer to keep the original filename:
-```bash
-sudo cp 2fa.sh /usr/local/bin/2fa.sh
-# Then use: 2fa.sh init
 ```
 
 ---
@@ -65,31 +61,31 @@ sudo cp 2fa.sh /usr/local/bin/2fa.sh
 
 ```bash
 # Initialize storage (creates encrypted ~/.2fa/secrets.gpg)
-2fa init
+2fa.sh init
 
 # Add a service (secret from website QR code)
-2fa add github JBSWY3DPEHPK3PXP
+2fa.sh add github JBSWY3DPEHPK3PXP
 
 # Get TOTP code (auto-copies to clipboard)
-2fa get github
+2fa.sh get github
 
 # Show all services with current codes
-2fa show-all
+2fa.sh show-all
 
 # Export QR code to phone (Google Authenticator / Aegis)
-2fa qr github
+2fa.sh qr github
 
 # Create encrypted backup (saved to ~/.2fa/backups/)
-2fa backup
+2fa.sh backup
 
 # Restore from backup
-2fa restore ~/.2fa/backups/secrets.2026-04-06.gpg
+2fa.sh restore ~/.2fa/backups/secrets.2026-04-06.gpg
 
 # Show version
-2fa version
+2fa.sh version
 
 # Show author and repository info
-2fa about
+2fa.sh about
 ```
 
 ---
@@ -148,6 +144,7 @@ sudo cp 2fa.sh /usr/local/bin/2fa.sh
 
 - **Author:** [@smartlegionlab](https://github.com/smartlegionlab/)
 - **Repository:** [smartlegionlab/smart-2fa-manager-bash](https://github.com/smartlegionlab/smart-2fa-manager-bash)
+- **Python CLI version:** [smartlegionlab/smart-2fa-manager-python-cli](https://github.com/smartlegionlab/smart-2fa-manager-python-cli)
 - **License:** [BSD 3-Clause](LICENSE)
 
 ---
