@@ -1,6 +1,18 @@
-# Smart 2FA Manager (bash) <sup>v1.0.2</sup>
+# Smart 2FA Manager (bash) <sup>v1.0.3</sup>
+
+---
 
 **Lightweight, offline, independent TOTP 2FA manager for Linux.**
+
+---
+
+[![GitHub top language](https://img.shields.io/github/languages/top/smartlegionlab/smart-2fa-manager-bash)](https://github.com/smartlegionlab/smart-2fa-manager-bash)
+[![GitHub license](https://img.shields.io/github/license/smartlegionlab/smart-2fa-manager-bash)](https://github.com/smartlegionlab/smart-2fa-manager-bash/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/smartlegionlab/smart-2fa-manager-bash)](https://github.com/smartlegionlab/smart-2fa-manager-bash/)
+[![GitHub stars](https://img.shields.io/github/stars/smartlegionlab/smart-2fa-manager-bash?style=social)](https://github.com/smartlegionlab/smart-2fa-manager-bash/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/smartlegionlab/smart-2fa-manager-bash?style=social)](https://github.com/smartlegionlab/smart-2fa-manager-bash/network/members)
+
+---
 
 No cloud, no phone required. Store your secrets locally, generate codes, create encrypted backups, and sync with Google Authenticator via QR codes.
 
@@ -145,6 +157,7 @@ sudo dnf install oathtool gnupg2 qrencode
 - **Author:** [@smartlegionlab](https://github.com/smartlegionlab/)
 - **Repository:** [smartlegionlab/smart-2fa-manager-bash](https://github.com/smartlegionlab/smart-2fa-manager-bash)
 - **Python CLI version:** [smartlegionlab/smart-2fa-manager-python-cli](https://github.com/smartlegionlab/smart-2fa-manager-python-cli)
+- **Python GUI version:** [smartlegionlab/smart-2fa-manager-python-gui](https://github.com/smartlegionlab/smart-2fa-manager-python-gui)
 - **License:** [BSD 3-Clause](LICENSE)
 
 ---
