@@ -1,4 +1,4 @@
-# Smart 2FA Manager (bash) <sup>v1.0.3</sup>
+# Smart 2FA Manager (bash) <sup>v1.0.4</sup>
 
 ---
 
