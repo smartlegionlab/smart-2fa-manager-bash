@@ -62,7 +62,8 @@ sudo dnf install oathtool gnupg2 qrencode
    chmod +x 2fa.sh
    sudo cp 2fa.sh /usr/local/bin/2fa.sh
    ```
-
+   Important! This command `2fa.sh init` should only be run on first launch!!! If you already have a .2FA folder created earlier that already stores your services, initialization is not required; you can start using the application immediately.
+   Important! Run only if you don't have a `~/.2fa` folder and haven't previously initialized using other similar applications or added services!
    Now you can use: `2fa.sh init`
 
 ```
@@ -72,6 +73,8 @@ sudo dnf install oathtool gnupg2 qrencode
 ## Quick Start
 
 ```bash
+# Important! This command `2fa.sh init` should only be run on first launch!!! If you already have a .2FA folder created earlier that already stores your services, initialization is not required; you can start using the application immediately.
+# Important! Run only if you don't have a `~/.2fa` folder and haven't previously initialized using other similar applications or added services!
 # Initialize storage (creates encrypted ~/.2fa/secrets.gpg)
 2fa.sh init
 
