@@ -39,44 +39,48 @@ sanitize_service_name() {
 }
 
 usage() {
-    cat << EOF
-Smart 2FA Manager v${VERSION} - Offline TOTP 2FA generator for Linux
-
-Usage:
-    2fa <command> [arguments]
-
-Commands:
-    add <service> <secret>     Add a new service
-    get <service>              Get TOTP code (copies to clipboard)
-    list                       List all service names
-    show-all                   Show all services with current codes
-    del <service>              Delete a service
-    show                       Show unencrypted content (unsafe)
-    backup                     Save encrypted backup with timestamp
-    restore <file>             Restore from encrypted backup file
-    init                       Initialize storage (create empty)
-    qr <service>               Show QR code for phone
-    about                      Show author and repository info
-    version                    Show version number
-    help                       Show this help message
-
-Examples:
-    2fa init
-    2fa add github JBSWY3DPEHPK3PXP
-    2fa get github
-    2fa list
-    2fa show-all
-    2fa qr github
-    2fa backup
-    2fa restore ~/.2fa/backups/secrets.2026-04-06.gpg
-
-File Structure:
-    ~/.2fa/secrets.gpg          # Encrypted master storage
-    ~/.2fa/backups/*.gpg        # Timestamped encrypted backups
-
-Repository: https://github.com/smartlegionlab/smart-2fa-manager-bash
-License: BSD 3-Clause
-EOF
+    echo "Smart 2FA Manager v${VERSION} - Offline TOTP 2FA generator for Linux"
+    echo ""
+    echo "Important! This command '2fa.sh init' should only be run on first launch!!!"
+    echo "If you already have a .2FA folder created earlier that already stores your services,"
+    echo "initialization is not required; you can start using the application immediately."
+    echo "Run only if you don't have a '~/.2fa' folder and haven't previously initialized"
+    echo "using other similar applications or added services!"
+    echo ""
+    echo "Usage:"
+    echo "    2fa.sh <command> [arguments]"
+    echo ""
+    echo "Commands:"
+    echo "    add <service> <secret>     Add a new service"
+    echo "    get <service>              Get TOTP code (copies to clipboard)"
+    echo "    list                       List all service names"
+    echo "    show-all                   Show all services with current codes"
+    echo "    del <service>              Delete a service"
+    echo "    show                       Show unencrypted content (unsafe)"
+    echo "    backup                     Save encrypted backup with timestamp"
+    echo "    restore <file>             Restore from encrypted backup file"
+    echo "    init                       Initialize storage (create empty)"
+    echo "    qr <service>               Show QR code for phone"
+    echo "    about                      Show author and repository info"
+    echo "    version                    Show version number"
+    echo "    help                       Show this help message"
+    echo ""
+    echo "Examples:"
+    echo "    2fa.sh init"
+    echo "    2fa.sh add github JBSWY3DPEHPK3PXP"
+    echo "    2fa.sh get github"
+    echo "    2fa.sh list"
+    echo "    2fa.sh show-all"
+    echo "    2fa.sh qr github"
+    echo "    2fa.sh backup"
+    echo "    2fa.sh restore ~/.2fa/backups/secrets.2026-04-06.gpg"
+    echo ""
+    echo "File Structure:"
+    echo "    ~/.2fa/secrets.gpg          # Encrypted master storage"
+    echo "    ~/.2fa/backups/*.gpg        # Timestamped encrypted backups"
+    echo ""
+    echo "Repository: https://github.com/smartlegionlab/smart-2fa-manager-bash"
+    echo "License: BSD 3-Clause"
     exit 0
 }
 
