@@ -1,4 +1,4 @@
-# Smart 2FA Manager (bash) <sup>v1.0.4</sup>
+# Smart 2FA Manager (bash) <sup>v1.0.5</sup>
 
 ---
 
@@ -64,9 +64,11 @@ sudo dnf install oathtool gnupg2 qrencode
    ```
    Important! This command `2fa.sh init` should only be run on first launch!!! If you already have a .2FA folder created earlier that already stores your services, initialization is not required; you can start using the application immediately.
    Important! Run only if you don't have a `~/.2fa` folder and haven't previously initialized using other similar applications or added services!
-   Now you can use: `2fa.sh init`
-
-```
+   
+   Now you can use:
+   ```bash
+   2fa.sh init
+   ```
 
 ---
 
