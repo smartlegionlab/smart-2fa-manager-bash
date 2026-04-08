@@ -2,7 +2,7 @@
 
 # =====================================================================
 # Smart 2FA Manager - independent TOTP generator
-# Version: v1.0.5
+# Version: v1.0.6
 # Author: Alexander Suvorov
 # Repository: https://github.com/smartlegionlab/smart-2fa-manager-bash
 # License: BSD 3-Clause
@@ -12,7 +12,7 @@ CONFIG_DIR="$HOME/.2fa"
 SECRETS_ENC="$CONFIG_DIR/secrets.gpg"
 SECRETS_TMP="$CONFIG_DIR/secrets.tmp"
 BACKUP_DIR="$CONFIG_DIR/backups"
-VERSION="v1.0.5"
+VERSION="v1.0.6"
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
