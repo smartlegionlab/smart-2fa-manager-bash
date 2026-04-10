@@ -1,4 +1,4 @@
-# Smart 2FA Manager (bash) <sup>v1.0.6</sup>
+# Smart 2FA Manager (bash) <sup>v1.1.0</sup>
 
 ---
 
@@ -161,8 +161,14 @@ sudo dnf install oathtool gnupg2 qrencode
 
 - **Author:** [@smartlegionlab](https://github.com/smartlegionlab/)
 - **Repository:** [smartlegionlab/smart-2fa-manager-bash](https://github.com/smartlegionlab/smart-2fa-manager-bash)
-- **Python CLI version:** [smartlegionlab/smart-2fa-manager-python-cli](https://github.com/smartlegionlab/smart-2fa-manager-python-cli)
-- **Python GUI version:** [smartlegionlab/smart-2fa-manager-python-gui](https://github.com/smartlegionlab/smart-2fa-manager-python-gui)
+- **Python CLI version:** [smartlegionlab/smart-2fa-manager-cli](https://github.com/smartlegionlab/smart-2fa-manager-cli)
+- **Python GUI version:** [smartlegionlab/smart-2fa-manager-desktop](https://github.com/smartlegionlab/smart-2fa-manager-desktop)
 - **License:** [BSD 3-Clause](LICENSE)
+
+---
+
+## License
+
+*Licensed under [BSD 3-Clause License](LICENSE) • Copyright (©) 2026, [Alexander Suvorov](https://github.com/smartlegionlab)*
 
 ---
